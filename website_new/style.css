@@ -46,16 +46,17 @@ h2 {
 
 h3 {
   font-family: "gladiora light";
+  font-size: 2.4rem;
 }
 
 h4 {
   font-family: "gladiora thinit";
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h5 {
   font-family: "gladiora thinit";
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 p {
@@ -72,6 +73,7 @@ body {
   color: rgb(204, 226, 240);
 }
 
+
 .background_container {
   position: fixed;
   top: 0;
@@ -82,222 +84,6 @@ body {
   background-image: url("/imgs/Gradient.png");
   background-size: cover;
   background-attachment: fixed; /* Fixed attachment for parallax effect */
-}
-
-main {
-}
-
-.navbar {
-  display: flex;
-  flex-direction: column;
-  position: relative; /* Keep the navbar fixed */
-  top: 20px;
-  right: 50px;
-  z-index: 1000;
-}
-
-/* Allow the navbar to grow and take available space */
-
-.navbar a {
-  text-decoration: none;
-  color: white;
-  padding: 15px;
-  font-size: 5rem;
-  color: #fff;
-  font-family: "gladiora reg";
-  font-size: 100px;
-  font-style: italic;
-  font-weight: 200;
-  line-height: normal;
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-  color: rgb(44, 45, 78);
-  text-shadow: 20px 20px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
-}
-
-.navbar a.small {
-  font-size: 1rem; /* Reduce font size for small screens */
-  padding: 10px; /* Adjust padding for small screens */
-  margin-left: 10px;
-  margin-bottom: 10px; /* Adjust margin bottom for small links */
-}
-
-.navbar a.active {
-  z-index: 1000; /* Ensure it stays above other content */
-}
-
-.about_me_info,
-.contact_me_info {
-  position: relative; /* Change to absolute position */
-  left: 0;
-  width: 100%;
-  display: none; /* Initially hide the section */
-}
-
-.about_me_info.show {
-  display: block; /* Show the section */
-}
-
-.about_me_content {
-  color: #292f5f;
-  text-align: left;
-  margin: 20px;
-}
-
-
-
-.contact_me_info.show {
-  display: block; /* Show the section */
-}
-
-.contact_me_content {
-  color: #292f5f;
-  text-align: left;
-}
-
-/*
-/* Define a new CSS class for small links arranged in a row */
-.small-links {
-  display: flex;
-  flex-direction: row; /* Display the small links in a row */
-  justify-content: space-between; /* Add space between the links */
-  align-items: center; /* Center the links vertically */
-}
-/*
-.small-links a {
-  margin-right: 20px; /* Add some spacing between the small links */
-
-section .scroll {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  overflow: hidden;
-}
-
-section .scroll_info {
-  position: relative;
-  width: 100%;
-  height: 6vh;
-  background: rgba(27, 23, 58, 0.5);
-  overflow: hidden;
-}
-
-.scroll_info p {
-  position: absolute;
-  white-space: nowrap;
-  font-size: 1.2em;
-  line-height: 6vh;
-  animation: animate 20s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateX(100vw); /* Start from the right */
-  }
-  100% {
-    transform: translateX(-100%); /* Move to the left */
-  }
-}
-
-.top_container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; /* Add space between the elements */
-  padding: 20px;
-  max-width: 80%; /* Limit the width of the container */
-  margin: 0 auto; /* Center the container horizontally */
-}
-
-.profile_pic {
-  flex: 1; /* Allow the profile pic to grow and take available space */
-  margin-right: 20px; /* Add some space between profile pic and navbar */
-}
-
-.profile_pic img {
-  max-width: 90%;
-}
-
-.looking_for {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 60px 200px;
-}
-
-.looking_for h2 {
-  margin-bottom: 30px;
-}
-
-.looking_for p {
-  line-height: 30px;
-}
-
-.looking_for img {
-  margin-top: 50px;
-}
-
-.want_bring_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 60px 180px;
-}
-
-.want_bring_boxes {
-  display: flex;
-}
-
-.want_box,
-.bring_box,
-.skills {
-  flex: 1; /* Distribute equal width among flex items */
-  max-width: 300px; /* Adjust the maximum width */
-  padding: 20px; /* Adjust padding */
-  border-radius: 10px;
-  background-color: #d9d9d933;
-  margin: 10px; /* Adjust margin */
-}
-
-.want_box h5,
-.bring_box h5 {
-  margin-bottom: 20px;
-}
-
-.want_box li,
-.bring_box li {
-  margin-left: 20px;
-  line-height: 26px;
-}
-
-.want_bring_undertext {
-  text-align: center;
-  margin-top: 20px;
-  width: 600px;
-}
-
-.skills img {
-  width: 100%;
-}
-
-.quote_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 80px auto; /* Center horizontally */
-  max-width: 40%;
-}
-
-.quote_container img {
-  width: 60px;
-  margin: 4px 0 30px 0;
 }
 
 footer {
@@ -355,50 +141,7 @@ footer {
   background-color: rgb(159, 216, 216); /* Change background color on hover */
 }
 
-/* Media query for small screens */
+
 @media screen and (max-width: 768px) {
-  .top_container {
-    flex-direction: column; /* Stack items vertically on small screens */
-    align-items: center; /* Center items horizontally */
-  }
 
-  .profile_pic {
-    margin-bottom: 10px; /* Add space between profile pic and navbar */
-  }
-
-  .navbar {
-    position: static; /* Remove fixed positioning */
-    margin-top: 10px; /* Add space between profile pic and navbar */
-    width: fit-content; /* Adjust width to fit content */
-    /* Reduce font size for small screens */
-  }
-
-  .navbar a {
-    font-size: 2rem;
-  }
-
-
-   .about_me_info,
-  .contact_me_info {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: auto;
-    transform: none;
-  }
-
-
-  .looking_for {
-    margin: 40px 50px 20px 50px;
-  }
-
-.want_bring_boxes {
-  flex-direction: column;
 }
-
-.want_box, .bring_box, .skills {
-
-padding: 30px;
-}
-}
-
