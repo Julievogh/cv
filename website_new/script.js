@@ -35,3 +35,29 @@ document.addEventListener("DOMContentLoaded", function () {
   // Attach click event listener to the "CONTACT" link
   contactMeLink.addEventListener("click", showContactMe);
 });
+
+// Slider
+
+const swiper = new Swiper(".swiper", {
+  speed: 1000, // Adjust slide transition speed (in milliseconds)
+  autoplay: {
+    delay: 3000, // Adjust autoplay delay between slides (in milliseconds)
+    disableOnInteraction: false,
+  },
+  // Other configuration options...
+
+
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

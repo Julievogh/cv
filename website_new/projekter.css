@@ -38,16 +38,54 @@ body {
   z-index: 1000; /* Ensure it stays above other content */
 }
 
-.projects_container h1 {
-  margin: 30px;
+.top_text {
+  margin: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.top_text h4 {
+  width: 600px;
+  margin: 0 auto; /* Center horizontally */
+  text-align: left;
+}
+
+.proj_cont {
+  display: flex; /* Set the container as flex */
+  flex-wrap: wrap; /* Ensure items stay in a single row */
+  justify-content: space-around; /* Distribute items evenly along the main axis */
+  flex-direction: row;
 }
 
 .projects_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  /* Remove flex-direction and margin properties */
+  /* Add padding if needed */
+  background-color: rgba(192, 236, 255, 0.2);
+
+  max-width: 400px;
+  padding: 10px 30px; /* Adjust padding as needed */
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
+
+.projects_container:nth-child(1) {
+  background-color: rgba(192, 236, 255, 0.2); /* Color for first container */
+}
+
+.projects_container:nth-child(2) {
+  background-color: rgba(255, 192, 203, 0.2); /* Color for second container */
+}
+
+.projects_container:nth-child(3) {
+  background-color: rgba(173, 216, 230, 0.2); /* Color for third container */
+}
+
+.projects_container:nth-child(4) {
+  background-color: rgba(255, 192, 203, 0.2); /* Color for second container */
+}
+
+/* Add more styles for additional containers if needed */
 
 .projects_container h1 {
   color: white;
@@ -64,17 +102,62 @@ body {
   text-align: center;
 }
 
-.project_layout img {
-  max-width: 500px;
+/* SLideshow */
+
+.swiper-container {
+  width: 80%; /* Adjust container width as needed */
+  height: fit-content; /* Adjust container height as needed */
+  margin: 0 auto; /* Center the container */
+  background-color: aquamarine;
+}
+
+.project_img_container {
+  width: 50%; /* Adjust container width as needed */
   height: auto;
-  margin: 20px 0;
-  align-self: center;
-  justify-self: center;
+  margin: 0 auto;
+}
+
+.swiper {
+  width: 80%; /* Adjust container width as needed */
+  height: fit-content; /* Adjust container height as needed */
+}
+
+.swiper-slide img {
+  display: block; /* Ensure images are treated as block-level elements */
+  margin: 0 auto; /* Center the images horizontally */
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto;
+  max-width: 200px; /* Adjust maximum width of images as needed */
+}
+
+/* Additional styles for Swiper navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  background: white;
 }
 
 @media screen and (max-width: 768px) {
   .navbar2 a {
     font-size: 1.5rem;
+  }
+
+  /* VIRKER IKKE */
+
+  .top_text {
+    max-width: 100vh; /* Adjust the maximum width as needed */
+    margin: 40px auto; /* Center horizontally */
+    padding: 40px;
+  }
+
+  .proj_cont {
+    display: flex; /* Set the container as flex */
+    justify-content: center; /* Distribute items evenly along the main axis */
+    align-items: center;
+    flex-direction: column;
   }
 
   .projects_container {
