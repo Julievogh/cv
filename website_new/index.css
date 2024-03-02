@@ -140,11 +140,17 @@ section .scroll_info {
 }
 
 .looking_for h2 {
+  margin-bottom: 12px;
+}
+
+.looking_for h4 {
   margin-bottom: 30px;
 }
 
-.looking_for p {
+/* VIRKER IKKE??? */
+.looking_for p:first-child {
   line-height: 30px;
+  margin: 800px;
 }
 
 .looking_for img {
@@ -211,7 +217,7 @@ section .scroll_info {
   border-radius: 10px;
   background-color: #b8808033;
   margin: 10px; /* Adjust margin */
-   padding: 40px;
+  padding: 40px;
 }
 
 .quote_container {
@@ -221,7 +227,7 @@ section .scroll_info {
   justify-content: center;
   text-align: center;
   margin: 80px auto; /* Center horizontally */
- 
+
   max-width: 40%;
 }
 
@@ -276,6 +282,12 @@ section .scroll_info {
     padding: 30px;
     margin: 10px -120px;
     max-width: 400px;
+    min-width: 200px;
+  }
+
+  .under_box {
+    flex-direction: column;
+    min-width: 400px;
   }
 
   .want_bring_undertext {
