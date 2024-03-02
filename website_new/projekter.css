@@ -51,6 +51,18 @@ body {
   text-align: left;
 }
 
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Add margin to separate from project content */
+  margin-bottom: 30px;
+}
+
+.gif_container img {
+  max-width: 100%; /* Ensure the gif does not exceed its container */
+}
+
 .proj_cont {
   display: flex; /* Set the container as flex */
   flex-wrap: wrap; /* Ensure items stay in a single row */
@@ -59,15 +71,24 @@ body {
 }
 
 .projects_container {
-  /* Remove flex-direction and margin properties */
-  /* Add padding if needed */
+  display: flex;
+  flex-direction: column;
   background-color: rgba(192, 236, 255, 0.2);
 
-  max-width: 400px;
+  max-width: 600px;
   padding: 10px 30px; /* Adjust padding as needed */
   margin: 0 auto;
   margin-bottom: 20px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease; /* Add transition for smooth effect */
 }
+
+.projects_container:hover {
+  /* Remove filter when hovering over the container */
+  filter: none;
+}
+
+
 
 .projects_container:nth-child(1) {
   background-color: rgba(192, 236, 255, 0.2); /* Color for first container */
@@ -106,6 +127,16 @@ body {
   text-align: center;
 }
 
+
+.swiper-slide img {
+  display: block;
+  margin: 0 auto; 
+  width: 100%; 
+  height: auto; 
+  
+  padding-bottom: 40px;
+}
+
 /* SLideshow */
 
 .swiper-container {
@@ -129,9 +160,10 @@ body {
 .swiper-slide img {
   display: block; /* Ensure images are treated as block-level elements */
   margin: 0 auto; /* Center the images horizontally */
-  max-width: 100%; /* Ensure images don't exceed container width */
-  height: auto;
+  width: 100%; /* Set width to fill the container */
+  height: auto; /* Maintain aspect ratio */
   max-width: 200px; /* Adjust maximum width of images as needed */
+  max-height: 150px; /* Adjust maximum height of images as needed */
 }
 
 /* Additional styles for Swiper navigation buttons */
@@ -151,18 +183,20 @@ body {
 
   /* VIRKER IKKE */
 
-  .top_text {
-    max-width: 100vh; /* Adjust the maximum width as needed */
-    margin: 40px auto; /* Center horizontally */
-    padding: 40px;
-  }
 
-  .proj_cont {
-    display: flex; /* Set the container as flex */
-    justify-content: center; /* Distribute items evenly along the main axis */
-    align-items: center;
-    flex-direction: column;
-  }
+.top_text {
+  margin: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.top_text h4 {
+  width: 400px;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  
+}
 
   .projects_container {
     display: flex;
@@ -170,6 +204,7 @@ body {
     justify-content: center;
     flex-direction: column;
     margin: 20px 20px;
+    max-width: 400px;
   }
 
   .project_layout img {
