@@ -85,6 +85,10 @@ body {
   background-color: rgba(255, 192, 203, 0.2); /* Color for second container */
 }
 
+.projects_container:nth-child(6) {
+  background-color: rgba(255, 192, 203, 0.2); /* Color for second container */
+}
+
 /* Add more styles for additional containers if needed */
 
 .projects_container h1 {
@@ -112,13 +116,13 @@ body {
 }
 
 .project_img_container {
-  width: 50%; /* Adjust container width as needed */
+  width: 100%; /* Adjust container width as needed */
   height: auto;
   margin: 0 auto;
 }
 
 .swiper {
-  width: 80%; /* Adjust container width as needed */
+  width: 100%; /* Adjust container width as needed */
   height: fit-content; /* Adjust container height as needed */
 }
 

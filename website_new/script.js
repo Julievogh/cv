@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const swiper = new Swiper(".swiper", {
   speed: 1000, // Adjust slide transition speed (in milliseconds)
   autoplay: {
-    delay: 3000, // Adjust autoplay delay between slides (in milliseconds)
+    delay: 4000, // Adjust autoplay delay between slides (in milliseconds)
     disableOnInteraction: false,
   },
   // Other configuration options...
