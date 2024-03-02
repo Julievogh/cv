@@ -199,6 +199,11 @@ section .scroll_info {
   width: 100%;
 }
 
+.under_box {
+  display: flex;
+  flex-direction: row;
+}
+
 .my_tools {
   flex: 1; /* Distribute equal width among flex items */
   max-width: 900px; /* Adjust the maximum width */
