@@ -1,0 +1,53 @@
+body {
+      margin: 20px;
+}
+
+.navbar2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  right: 50px;
+  z-index: 1000;
+  margin: 10px 20px;
+}
+
+/* Allow the navbar to grow and take available space */
+
+.navbar2 a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  font-size: 5rem;
+  color: #fff;
+  font-family: "gladiora reg";
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 200;
+  line-height: normal;
+  transition: color 0.3s ease;
+}
+
+.navbar2 a:hover {
+  color: rgb(44, 45, 78);
+  text-shadow: 20px 20px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.navbar2 a.active {
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.contact_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 700px;
+    margin: 60px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar2 a {
+    font-size: 1.5rem;
+  }}
