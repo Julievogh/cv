@@ -211,6 +211,8 @@ section .scroll_info {
 }
 
 .my_tools {
+  margin-left: 20px;
+  line-height: 26px;
   flex: 1; /* Distribute equal width among flex items */
   max-width: 900px; /* Adjust the maximum width */
   padding: 30px 20px; /* Adjust padding */
