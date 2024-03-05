@@ -13,7 +13,7 @@ body {
   margin: 10px 20px;
 }
 
-/* Allow the navbar to grow and take available space */
+
 
 .navbar2 a {
   text-decoration: none;
@@ -31,11 +31,11 @@ body {
 
 .navbar2 a:hover {
   color: rgb(44, 45, 78);
-  text-shadow: 20px 20px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  text-shadow: 20px 20px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .navbar2 a.active {
-  z-index: 1000; /* Ensure it stays above other content */
+  z-index: 1000; 
 }
 
 .contact_container {

@@ -1,13 +1,13 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  position: relative; /* Keep the navbar fixed */
+  position: relative; 
   top: 20px;
   right: 50px;
   z-index: 1000;
 }
 
-/* Allow the navbar to grow and take available space */
+
 
 .navbar a {
   text-decoration: none;
@@ -25,19 +25,19 @@
 
 .navbar a:hover {
   color: rgb(44, 45, 78);
-  text-shadow: 20px 20px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  text-shadow: 20px 20px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar a.active {
-  z-index: 1000; /* Ensure it stays above other content */
+  z-index: 1000; 
 }
 
 .about_me_info,
 .contact_me_info {
-  position: relative; /* Change to absolute position */
+  position: relative; 
   left: 0;
   width: 100%;
-  display: none; /* Initially hide the section */
+  display: none; 
 }
 
 .about_me_info {
@@ -45,16 +45,15 @@
 }
 
 .about_me_info.show {
-  display: block; /* Show the section */
+  display: block; 
 }
-
 .about_me_content {
   color: #e4e5ef;
   text-align: left;
 }
 
 .contact_me_info.show {
-  display: block; /* Show the section */
+  display: block; 
 }
 
 .contact_me_content {
@@ -63,17 +62,14 @@
   margin: 20px 20px 40px 20px;
 }
 
-/*
-  /* Define a new CSS class for small links arranged in a row */
+
 .small-links {
   display: flex;
-  flex-direction: row; /* Display the small links in a row */
-  justify-content: space-between; /* Add space between the links */
-  align-items: center; /* Center the links vertically */
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center; 
 }
-/*
-  .small-links a {
-    margin-right: 20px; /* Add some spacing between the small links */
+
 
 section .scroll {
   position: relative;
@@ -105,10 +101,10 @@ section .scroll_info {
 
 @keyframes animate {
   0% {
-    transform: translateX(100vw); /* Start from the right */
+    transform: translateX(100vw); 
   }
   100% {
-    transform: translateX(-100%); /* Move to the left */
+    transform: translateX(-100%);
   }
 }
 
@@ -116,15 +112,15 @@ section .scroll_info {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between; /* Add space between the elements */
+  justify-content: space-between;
   padding: 20px;
-  max-width: 80%; /* Limit the width of the container */
-  margin: 0 auto; /* Center the container horizontally */
+  max-width: 80%; 
+  margin: 0 auto; 
 }
 
 .profile_pic {
-  flex: 1; /* Allow the profile pic to grow and take available space */
-  margin-right: 20px; /* Add some space between profile pic and navbar */
+  flex: 1; 
+  margin-right: 20px; 
 }
 
 .profile_pic img {
@@ -147,7 +143,7 @@ section .scroll_info {
   margin-bottom: 30px;
 }
 
-/* VIRKER IKKE??? */
+
 .looking_for p:first-child {
   line-height: 30px;
   margin: 800px;
@@ -176,12 +172,12 @@ section .scroll_info {
 .want_box,
 .bring_box,
 .skills {
-  flex: 1; /* Distribute equal width among flex items */
-  max-width: 300px; /* Adjust the maximum width */
-  padding: 30px 20px; /* Adjust padding */
+  flex: 1; 
+  max-width: 300px; 
+  padding: 30px 20px; 
   border-radius: 10px;
   background-color: #d9d9d933;
-  margin: 10px; /* Adjust margin */
+  margin: 10px; 
 }
 
 .want_box h5,
@@ -213,12 +209,12 @@ section .scroll_info {
 .my_tools {
   margin-left: 20px;
   line-height: 26px;
-  flex: 1; /* Distribute equal width among flex items */
-  max-width: 900px; /* Adjust the maximum width */
-  padding: 30px 20px; /* Adjust padding */
+  flex: 1; 
+  max-width: 900px; 
+  padding: 30px 20px; 
   border-radius: 10px;
   background-color: #b8808033;
-  margin: 10px; /* Adjust margin */
+  margin: 10px; 
   padding: 40px;
 }
 
@@ -228,7 +224,7 @@ section .scroll_info {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 80px auto; /* Center horizontally */
+  margin: 80px auto; 
 
   max-width: 40%;
 }
@@ -238,27 +234,27 @@ section .scroll_info {
   margin: 4px 0 30px 0;
 }
 
-/* Media query for small screens */
+
 @media screen and (max-width: 768px) {
   .top_container {
-    flex-direction: column; /* Stack items vertically on small screens */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .profile_pic {
-    margin-bottom: 10px; /* Add space between profile pic and navbar */
+    margin-bottom: 10px;
   }
 
   .navbar {
-    position: static; /* Remove fixed positioning */
-    margin-top: 10px; /* Add space between profile pic and navbar */
-    width: fit-content; /* Adjust width to fit content */
+    position: static; 
+    margin-top: 10px; 
+    width: fit-content; 
     margin-left: 40px;
   }
 
   .navbar a {
-    font-size: 2rem; /* Reduce font size for small screens */
-    margin-right: 300px; /* Add margin to the left */
+    font-size: 2rem; 
+    margin-right: 300px; 
   }
 
   .about_me_info,
