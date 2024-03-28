@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function showContactMe() {
-  t;
   const contactMe = document.querySelector(".contact_me_info");
   contactMe.classList.toggle("show");
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const contactMeLink = document.querySelector(".contact_nav");
