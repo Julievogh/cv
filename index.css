@@ -1,13 +1,11 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  position: relative; 
+  position: relative;
   top: 20px;
   right: 50px;
   z-index: 1000;
 }
-
-
 
 .navbar a {
   text-decoration: none;
@@ -29,15 +27,15 @@
 }
 
 .navbar a.active {
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .about_me_info,
 .contact_me_info {
-  position: relative; 
+  position: relative;
   left: 0;
   width: 100%;
-  display: none; 
+  display: none;
 }
 
 .about_me_info {
@@ -45,7 +43,7 @@
 }
 
 .about_me_info.show {
-  display: block; 
+  display: block;
 }
 .about_me_content {
   color: #e4e5ef;
@@ -53,7 +51,7 @@
 }
 
 .contact_me_info.show {
-  display: block; 
+  display: block;
 }
 
 .contact_me_content {
@@ -62,14 +60,12 @@
   margin: 20px 20px 40px 20px;
 }
 
-
 .small-links {
   display: flex;
-  flex-direction: row; 
-  justify-content: space-between; 
-  align-items: center; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-
 
 section .scroll {
   position: relative;
@@ -83,7 +79,7 @@ section .scroll_info {
   position: relative;
   width: 100%;
   height: 6vh;
-  background: rgba(27, 23, 58, 0.5);
+  background: rgba(138, 101, 153, 0.5);
   overflow: hidden;
 }
 
@@ -96,12 +92,12 @@ section .scroll_info {
 }
 
 .scroll_info span {
-  color: rgb(120, 137, 233);
+  color: rgb(42, 34, 65);
 }
 
 @keyframes animate {
   0% {
-    transform: translateX(100vw); 
+    transform: translateX(100vw);
   }
   100% {
     transform: translateX(-100%);
@@ -114,13 +110,13 @@ section .scroll_info {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  max-width: 80%; 
-  margin: 0 auto; 
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .profile_pic {
-  flex: 1; 
-  margin-right: 20px; 
+  flex: 1;
+  margin-right: 20px;
 }
 
 .profile_pic img {
@@ -142,7 +138,6 @@ section .scroll_info {
 .looking_for h4 {
   margin-bottom: 30px;
 }
-
 
 .looking_for p:first-child {
   line-height: 30px;
@@ -172,12 +167,12 @@ section .scroll_info {
 .want_box,
 .bring_box,
 .skills {
-  flex: 1; 
-  max-width: 300px; 
-  padding: 30px 20px; 
+  flex: 1;
+  max-width: 300px;
+  padding: 30px 20px;
   border-radius: 10px;
   background-color: #d9d9d933;
-  margin: 10px; 
+  margin: 10px;
 }
 
 .want_box h5,
@@ -204,18 +199,16 @@ section .scroll_info {
 .under_box {
   display: flex;
   flex-direction: row;
+  margin: 0 -10px; /* Adjust margin to compensate for removed margins and paddings */
 }
 
 .my_tools {
-  margin-left: 20px;
   line-height: 26px;
-  flex: 1; 
-  max-width: 900px; 
-  padding: 30px 20px; 
+  flex-grow: 1;
   border-radius: 10px;
   background-color: #b8808033;
-  margin: 10px; 
-  padding: 40px;
+  padding: 30px; /* Adjust padding */
+  margin: 10px; /* Adjust margin */
 }
 
 .quote_container {
@@ -224,7 +217,7 @@ section .scroll_info {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 80px auto; 
+  margin: 80px auto;
 
   max-width: 40%;
 }
@@ -234,11 +227,10 @@ section .scroll_info {
   margin: 4px 0 30px 0;
 }
 
-
 @media screen and (max-width: 768px) {
   .top_container {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   .profile_pic {
@@ -246,15 +238,15 @@ section .scroll_info {
   }
 
   .navbar {
-    position: static; 
-    margin-top: 10px; 
-    width: fit-content; 
+    position: static;
+    margin-top: 10px;
+    width: fit-content;
     margin-left: 40px;
   }
 
   .navbar a {
-    font-size: 2rem; 
-    margin-right: 300px; 
+    font-size: 2rem;
+    margin-right: 300px;
   }
 
   .about_me_info,
